@@ -10,34 +10,35 @@
  <div align="center">
   <h1>Employee Register Form</h1>
   <form action="<%= request.getContextPath() %>/register" method="post">
-   <table style="with: 80%">
+    <table style="width: 20%">
     <tr>
      <td>First Name</td>
-     <td><input type="text" name="firstName" /></td>
+     <td><input type="text" name="firstName" required /></td>
     </tr>
     <tr>
      <td>Last Name</td>
-     <td><input type="text" name="lastName" /></td>
+     <td><input type="text" name="lastName" required /></td>
     </tr>
     <tr>
      <td>UserName</td>
-     <td><input type="text" name="username" /></td>
+     <td><input type="text" name="username" required /></td>
     </tr>
     <tr>
      <td>Password</td>
-     <td><input type="password" name="password" /></td>
+     <td><input type="password" name="password" required /></td>
     </tr>
     <tr>
      <td>Address</td>
-     <td><input type="text" name="address" /></td>
+     <td><input type="text" name="address" required /></td>
     </tr>
     <tr>
      <td>Contact No</td>
-     <td><input type="text" name="contact" /></td>
+     <td><input type="text" name="contact" required /></td>
     </tr>
    </table>
    <input type="submit" value="Submit" />
-  </form>
+</form>
+   
  </div>
 </body>
 </html>
